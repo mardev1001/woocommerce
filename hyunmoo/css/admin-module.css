@@ -1,0 +1,42 @@
+div.dash-wrap {
+	margin: 0px 5px;
+}
+.dash-left {
+	float: left;
+	padding-right: 0.5%;
+	width: 49%;
+}
+.dash-right {
+	float: right;
+	padding-left: 0.5%;
+	width: 49%;
+}
+.dash-top, .dash-bottom {
+	float: none;
+	width: 100%;
+}
+.dash-wrap strong {
+	color: #E83533;
+}
+h3.hndle span {
+	padding-left: 20px;
+	background-repeat: no-repeat;
+}
+h3.hndle span.info {
+	background-image: url(../images/info.png);
+}
+h3.hndle span.shop {
+	background-image: url(../images/chart-bar.png);
+}
+h3.hndle span.users {
+	background-image: url(../images/user.png);
+}
+h3.hndle span.blog {
+	background-image: url(../images/blog.png);
+}
+h3.hndle span.records {
+	background-image: url(../images/records.png);
+}
+h3.hndle span.support {
+	background-image: url(../images/help.png);
+}
