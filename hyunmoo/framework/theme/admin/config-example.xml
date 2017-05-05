@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config label="Settings">
+	<panel label="Basic" name="basic" formid="basic">
+		<group label="General">
+			<field type="Textbox" description="TextField area" label="Name" value="Kim" name="name" />
+			<field type="Select" label="Template" name="site_tpl">
+				<option value="baby">Baby</option>
+				<option value="mobile">Mobile</option>
+			</field>
+			<field type="Checkbox" label="Mobile" name="mobile_tpl">
+				<option value="yes">Use exclusive mobile template for smartphones</option>
+			</field>
+			<field type="Select" label="Blog Template" name="blog_tpl">
+				<option value="grid">Grid</option>
+				<option value="largeimage">Large Image</option>
+				<option value="smallimage">Small Image</option>
+			</field>
+			<field type="Select" label="Blog Sidebar" name="blog_sidebar">
+				<option value="right">Right</option>
+				<option value="left">Left</option>
+				<option value="nosidebar">No Sidebar</option>
+			</field>
+			<field type="Spinner" description="Select price" label="Price" data-required="true" name="price" />
+			<field type="Date" label="Date" data-required="true" name="date" />
+			<field type="DateTime" label="Date/Time" data-required="true" name="datetime" />
+			<field type="Color" label="Color" name="color" />
+			<field type="WordpressImage" name="logo" label="Website Logo" />
+		</group>
+		<group label="Maintenance">
+		</group>
+	</panel>
+	<panel label="Advanced" name="advanced">
+		<group label="Advertising">
+			<field type="Checkbox" label="Authentication" name="auth">
+				<option value="hyunmoo">Hyunmoo</option>
+				<option value="default">Default</option>
+			</field>
+			<field type="Select" label="Test" name="test" multiple="multiple">
+				<option value="grid">Grid</option>
+				<option value="largeimage">Large Image</option>
+				<option value="smallimage">Small Image</option>
+			</field>
+			<field type="WordpressImage" label="Background" name="background" />
+			<field type="Textbox" label="Agency" value="ABC Corp" name="agency">
+				<after>
+					<![CDATA[
+					<br />
+					<small><b>Agency name near your area</b></small><br />
+					]]>
+				</after>
+			</field>
+			<field type="Email" label="Email" data-required="true" name="email" />
+		</group>
+	</panel>
+</config>
