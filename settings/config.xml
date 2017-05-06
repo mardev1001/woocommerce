@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config label="Settings">
+	<panel label="Basic" name="basic" formid="basic">
+		<group label="General">
+			<field type="Select" label="Default Template" name="site_tpl">
+				<option value="baby">Baby</option>
+				<option value="mobile">Mobile</option>
+			</field>
+			<field type="Checkbox" label="Mobile" name="mobile_tpl">
+				<option value="yes">Use exclusive mobile template for smart phones</option>
+			</field>
+			<field type="WordpressImage" name="logo" label="Website Logo">
+				<after>
+					<![CDATA[
+					<small>&nbsp;Either html or image url</small><br />
+					]]>
+				</after>
+			</field>
+			<field type="WordpressImage" name="brand" label="Brand Image" description="Appears on theme dashboard page" />
+			<field type="Textbox" name="copyright" label="Copyright" style="min-width: 400px;" />
+		</group>
+		<group label="Icons">
+			<field type="WordpressImage" name="favicon" label="Favicon">
+				<after>
+					<![CDATA[
+					<small>&nbsp;(16 x 16)</small><br />
+					]]>
+				</after>
+			</field>
+			<field type="WordpressImage" name="iphone" label="iPhone">
+				<after>
+					<![CDATA[
+					<small>&nbsp;(57 x 57)</small><br />
+					]]>
+				</after>
+			</field>
+			<field type="WordpressImage" name="iphone_retina" label="iPhone Retina">
+				<after>
+					<![CDATA[
+					<small>&nbsp;(114 x 114)</small><br />
+					]]>
+				</after>
+			</field>
+			<field type="WordpressImage" name="ipad" label="iPad">
+				<after>
+					<![CDATA[
+					<small>&nbsp;(72 x 72)</small><br />
+					]]>
+				</after>
+			</field>
+			<field type="WordpressImage" name="ipad_retina" label="iPad Retina">
+				<after>
+					<![CDATA[
+					<small>&nbsp;(144 x 144)</small><br />
+					]]>
+				</after>
+			</field>
+		</group>
+	</panel>
+	<panel label="Style" name="style" formid="style">
+		<group label="Blog">
+			<field type="Select" label="Blog Template" name="blog_tpl">
+				<option value="grid">Grid</option>
+				<option value="largeimage">Large Image</option>
+				<option value="smallimage">Small Image</option>
+			</field>
+			<field type="Select" label="Blog Sidebar" name="blog_sidebar">
+				<option value="right">Right</option>
+				<option value="left">Left</option>
+				<option value="nosidebar">No Sidebar</option>
+			</field>
+			<field type="Select" label="Featured Image" description="Choose where to display featured images" name="featured_image">
+				<option value="none">None</option>
+				<option value="post">Post</option>
+				<option value="page">Page</option>
+				<option value="both">Both</option>
+			</field>
+			<field type="Select" label="Featured Slider" description="Choose whether to display featured sliders on posts" name="featured_slider">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+		</group>	
+		<group label="Typography">
+			<field type="Select" description="Font for header" label="Header Font" name="header_font">
+				<option value="">System Default</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Lato">Lato</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="EB Garamond">EB Garamond</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Source Sans Pro">Sans Pro</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Raleway">Raleway</option>
+			</field>
+			<field type="Select" description="Font for title i.e h1,h2,h3" label="Title Font" name="title_font">
+				<option value="">System Default</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Lato">Lato</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="EB Garamond">EB Garamond</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Source Sans Pro">Sans Pro</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Raleway">Raleway</option>
+			</field>
+			<field type="Select" description="Font for content" label="Content Font" name="content_font">
+				<option value="">System Default</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Lato">Lato</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="EB Garamond">EB Garamond</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Source Sans Pro">Sans Pro</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Raleway">Raleway</option>
+			</field>
+			<field type="Color" label="Primary Color" name="color_primary" description="Generally for page titles, headings and links etc" />
+			<field type="Color" label="Secondary Color" name="color_secondary" description="Generally for page content" />
+		</group>
+	</panel>
+	<panel label="Advanced" name="advanced">
+		<group label="Maintenance">
+			<field type="Radio" label="Admin Bar" name="adminbar" description="Enable/Disable admin bar">
+				<option value="enable">Enable</option>
+				<option value="disable">Disable</option>
+			</field>
+			<field type="Textarea" label="Tracking Code" name="trackcode" description="Google Analytics( or other) Tracking Code" cols="100" rows="8" />
+			<field type="Checkbox" label="Enable Debug Mode" description="Enable to change the site template through url of the browser" name="tpl_debug">
+				<option value="yes">Turn on debug mode</option>
+			</field>
+		</group>
+	</panel>
+</config>
