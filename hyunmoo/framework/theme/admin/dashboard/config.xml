@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config label="Dashboard">
+	<module position="top" label="Site info" hook="siteinfo" ico="info" />
+	<module position="left" label="Shop Revenue" hook="shop" ico="shop" />
+	<module position="left" label="Theme Assets" hook="records" ico="records" />
+	<module position="right" label="Users" hook="users" ico="users" />
+	<module position="right" label="Blog" hook="blog" ico="blog" />
+	<module position="bottom" label="Support and Testimonials" hook="support" ico="support" />
+</config>
