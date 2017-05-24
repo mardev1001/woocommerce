@@ -1,0 +1,76 @@
+﻿body {
+	font-family: sans-serif;
+	font-size: 12px;
+}
+table{
+	margin-top:50px;
+}
+td{
+	padding:5px;
+	font-size:13px;
+	vertical-align:top;
+}
+label {
+	float: left;
+}
+span {
+	float: left;
+}
+textarea, input[type="text"], input[type="password"], input[type="file"], input[type="button"], input[type="submit"], input[type="reset"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="url"], select {
+	border-color: #DFDFDF;
+	background-color: white;
+}
+select {
+	padding: 2px;
+	height: 2em;
+	width: 210px;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+textarea, input {
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+input[type='text'] {
+	padding: 3px;
+	width: 200px;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+textarea {
+	width: 325px;
+	height: 100px;
+}
+a.add {
+	margin-top:10px;
+	height: 25px;
+	border-radius: 4px;
+	font: bold 13px arial;
+	border: 1px solid #5E8C22;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75ad5e',endColorstr='#639b4e');
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#75ad5e), color-stop(100%,#639b4e));
+	background-image: -webkit-linear-gradient(top,#75ad5e,#639b4e);
+	background-image: -moz-linear-gradient(top,#75ad5e,#639b4e);
+	background-image: -o-linear-gradient(top,#75ad5e,#639b4e);
+	background-image: -ms-linear-gradient(top,#75ad5e,#639b4e);
+	background-image: linear-gradient(to bottom,#75ad5e,#639b4e);
+	display: inline-block;
+	line-height: 25px;
+	padding: 0 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+a.add:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7bb95f',endColorstr='#70af55');
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7bb95f), color-stop(100%,#70af55));
+	background-image: -webkit-linear-gradient(top,#7bb95f,#70af55);
+	background-image: -moz-linear-gradient(top,#7bb95f,#70af55);
+	background-image: -o-linear-gradient(top,#7bb95f,#70af55);
+	background-image: -ms-linear-gradient(top,#7bb95f,#70af55);
+	background-image: linear-gradient(to bottom,#7bb95f,#70af55);
+	box-shadow: inset 0 1px 0 #89c570,0 1px 1px rgba(0,0,0,0.16);
+}
